@@ -108,6 +108,12 @@ nav.navbar{
 }
 
 /* Nav Menu */
+nav.navbar > .container-fluid > .collapse{
+    justify-content: center;
+}
+nav.navbar > .container-fluid > .collapse > ul.navbar-nav > li{
+    padding: 20px;
+}
 nav.navbar > .container-fluid{
     background-color: var(--navbar-container);
     padding: 10px;
@@ -122,7 +128,7 @@ nav.navbar > .container-fluid > #navbarNav > ul > li > a {
 }
 
 /* Slide */
-.content-slide, .presta-categorie, .contact-txt{
+.content-slide, .presta-categorie, .contact-txt,.story_b{
     -webkit-box-shadow: 0px 4px 22px 0px rgba(0,0,0,0.25); 
     box-shadow: 0px 4px 22px 0px rgba(0,0,0,0.25);
 }
@@ -220,6 +226,9 @@ justify-content: center;
 }
 
 /* Div Contact */
+.contact{
+    padding-bottom: 50px;
+}
 .contact-txt{
     height: 500px;
     width: 40%;
@@ -244,4 +253,40 @@ justify-content: center;
 .contact > .contact-txt > .adresse > .txt-adresse > a > img{
     width: 70px;
     padding: 0 20px 0 10px;
+}
+.contact > .maps > iframe{
+    padding-left: 50px;
+}
+footer{
+    background-color: var(--navbar-container);
+}
+footer > .story_b> p{
+    font-size: var(--p-fs);   
+}
+.story_b> p{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+}
+
+
+
+
+/* Media Querry */
+@media screen and (max-width: 1600px){
+    .slide > #carouselExampleIndicators > .carousel-inner > .carousel-item > img{
+        height: 505px;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 950px) {
+    .slide > #carouselExampleIndicators > .carousel-inner > .carousel-item > img{
+        position: absolute;
+        top: 0;
+    }
+    .slide > #carouselExampleIndicators > .carousel-inner > .carousel-item > .content-slide > .txt-slide{
+        bottom: 0;
+    }
+
+    
 }
