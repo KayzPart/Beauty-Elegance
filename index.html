@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Elegance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./font/style.css">
+</head>
+
+<body>
+    <header class="row-limit-size">
+        <ul class="nav justify-content-center p-2">
+            <li class="nav-item">
+                <a class="nav-link active align-center" aria-current="page" href="#">
+                    <img src="./ressource/maps.webp" alt="">
+                    <p class="px-3 p-contact-header">
+                        46 Avenue Maréchal Foch Lyon 6ème 69006
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link align-center" href="tel:+33(0)4xxxxxxxx">
+                    <img src="./ressource/telephone.webp" alt="">
+                    <p class="px-3 p-contact-header">
+                        04 XX XX XX XX
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link align-center" href="mailto:contact@beautyelegance.com">
+                    <img src="./ressource/enveloppe.webp" alt="mail">
+                    <p class="px-3 p-contact-header">
+                        contact@beautyelegance.com
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="#">
+                    <figure>
+                        <img src="./ressource/logo.webp" alt="">
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Visage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Corps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Épilation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Slide -->
+    <div class="slide row-limit-size">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner p-5">
+                <div class="carousel-item active">
+                    <img src="./ressource/slide1.webp" class="d-block w-50 float-end" alt="...">
+                    <div class="content-slide text-center">
+                        <div class="txt-slide">
+                          <h2>Soins Visage</h2>
+                            <p>
+                                Votre beauté naturelle
+                                ne sera que sublimer,
+                                par nos expertes en soins du visage.
+                            </p>
+                            <button>
+                                <a href="">Découvrir ...</a>
+                            </button>  
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./ressource/slide2.webp" class="d-block w-50 float-end" alt="...">
+                    <div class="content-slide text-center">
+                        <div class="txt-slide">
+                            <h2>Soins Corps</h2>
+                            <p>
+                                Offrez vous un instant de bien-être.
+                            </p>
+                            <button>
+                                <a href="">Découvrir</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./ressource/slide3.webp" class="d-block w-50 float-end" alt="...">
+                    <div class="content-slide text-center">
+                        <div class="txt-slide text-center">
+                           <h2>Épilation</h2>
+                            <p>
+                                Nos prestations vous assurent des épilations réalisés avec soins.
+                            </p>
+                            <button>
+                                <a href="">Découvrir</a>
+                            </button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="h2-presta text-center">
+        <h2> Nos Prestations</h2>
+    </div>
+    <!-- Prestation -->
+    <div class="presta row-limit-size pb-5">
+        <div class="presta-categorie mb-5">
+            <figure>
+                <img src="./ressource/soinvisage.webp" alt="soin-visage">
+            </figure>
+            <div class="txt-presta">
+                <h3>Soin Hydrogel</h3>
+                <p>
+                    Le masque hydrogel concentré de lumière illumine, rafraîchit et lisse la peau.
+                </p>
+            </div>
+            <div class="price-presta align-center">
+                <span>45 €</span>
+            </div>
+        </div>
+        <div class="presta-categorie mb-5">
+            <figure>
+                <img src="./ressource/soinvisage2.webp" alt="soin-visage">
+            </figure>
+            <div class="txt-presta">
+                <h3>Soin argile</h3>
+                <p>
+                    Détoxifiante,   reminéralisante, elle rééquilibre l'épiderme.
+                </p>
+            </div>
+            <div class="price-presta align-center">
+                <span>25 €</span>
+            </div>
+        </div>
+        <div class="presta-categorie mb-5">
+            <figure>
+                <img src="./ressource/soinvisage3.webp" alt="soin-visage">
+            </figure>
+            <div class="txt-presta">
+                <h3>Soin peeling</h3>
+                <p>
+                    Élimine les cellules mortes, affine le grain de peau et unifie le teint pour un coup d'éclat. 
+                </p>
+            </div>
+            <div class="price-presta align-center">
+                <span>35 €</span>
+            </div>
+        </div>
+        <div class="presta-categorie mb-5">
+            <figure>
+                <img src="./ressource/soincorp.webp" alt="soin-visage">
+            </figure>
+            <div class="txt-presta">
+                <h3>Body Scrub</h3>
+                <p>
+                    Élimine les cellules mortes, améliore la circulation sanguine, illumine la peau et la rajeunie.
+                </p>
+            </div>
+            <div class="price-presta align-center">
+                <span>75 €</span>
+            </div>
+        </div>
+        <div class="presta-categorie mb-5">
+            <figure>
+                <img src="./ressource/soincorp2.webp" alt="soin-visage">
+            </figure>
+            <div class="txt-presta">
+                <h3>Massage</h3>
+                <p>
+                    Massage bienfaisant centré sur le dos et l’arrière des membres inférieurs.
+                </p>
+            </div>
+            <div class="price-presta align-center">
+                <span>60 €</span>
+            </div>
+        </div>
+        <div class="presta-categorie mb-5">
+            <figure>
+                <img src="./ressource/soincorp3.webp" alt="soin-visage">
+            </figure>
+            <div class="txt-presta">
+                <h3>Soin cellulite</h3>
+                <p>
+                    Permet de stimuler l’activité cellulaire et de combattre les graisses résistantes.
+                </p>
+            </div>
+            <div class="price-presta align-center">
+                <span>75 €</span>
+            </div>
+        </div>
+        <div class="presta-categorie mb-5">
+            <figure>
+                <img src="./ressource/sourcil3.webp" alt="soin-visage">
+            </figure>
+            <div class="txt-presta">
+                <h3>Sourcils</h3>
+                <p>
+                    Entretien mensuel de la ligne sourcilière.
+                    Pince à épiler & ciseaux
+                </p>
+            </div>
+            <div class="price-presta align-center">
+                <span>15 €</span>
+            </div>
+        </div>
+        <div class="presta-categorie mb-5">
+            <figure>
+                <img src="./ressource/jambe.webp" alt="soin-visage">
+            </figure>
+            <div class="txt-presta">
+                <h3>Jambes</h3>
+                <p>
+                    Épilation à la cire.
+                    Gain en tranquillité, la repousse est plus longue et le poil est plus doux.
+                </p>
+            </div>
+            <div class="price-presta align-center">
+                <span>25 €</span>
+            </div>
+        </div>
+        <div class="presta-categorie mb-5">
+            <figure>
+                <img src="./ressource/maillot.webp" alt="soin-visage">
+            </figure>
+            <div class="txt-presta">
+                <h3>Maillot</h3>
+                <p>
+                    Classique, bikini, Brésilien, Américain, ticket de métro, ou intégrale.
+                </p>
+            </div>
+            <div class="price-presta align-center">
+                <span>25 €</span>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div class="contact row-limit-size">
+        <div class="contact-txt">
+            <div class="horaire text-center">
+                <p>
+                    <span class="jours">Lundi :</span> 14:00–19:00
+                </p>
+                <p>
+                    <span class="jours">Mardi :</span> 09:00–18:30
+                </p>
+                <p>
+                    <span class="jours">Mercredi :</span> 09:00–14:00
+                </p>
+                <p>
+                    <span class="jours">Jeudi :</span> 09:00–18:30
+                </p>
+                <p>
+                    <span class="jours">Vendredi :</span> 09:00–18:30
+                </p>
+                <p>
+                    <span class="jours">Samedi :</span> 09:00–13:30
+                </p>
+                <p>
+                    <span class="jours">Dimanche :</span> Fermé
+                </p>   
+            </div>
+            <div class="adresse">
+                <div class="txt-adresse">
+                    <a class="align-center" href="#">
+                        <img src="./ressource/maps-footer.webp" alt="">
+                        <p>
+                            46 Avenue Maréchal Foch Lyon 6ème 69006
+                        </p>
+                    </a>  
+                </div>
+                <div class="txt-adresse">
+                    <a class="align-center" href="tel:+33(0)4xxxxxxxx">
+                        <img src="./ressource/telephone-footer.webp" alt="">
+                        <p>
+                            04 XX XX XX XX 
+                        </p>
+                    </a> 
+                </div>
+                <div class="txt-adresse">
+                    <a class="align-center" href="mailto:contact@beautyelegance.com">
+                        <img src="./ressource/enveloppe-footer.webp" alt="">
+                        <p>
+                            contact@beautyelegance.com 
+                        </p>
+                    </a> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

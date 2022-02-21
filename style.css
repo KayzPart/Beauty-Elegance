@@ -1,0 +1,247 @@
+/* VARIABLES */
+:root{
+    --background-nav-contact: #524A4E ;
+    --p-contact-header: #fff;
+    --link-menu: #000;
+    --link-menu-font: 25px;
+    --navbar-container: #F7ECE1;
+    --title-color: #ECC488;
+    --button-slide:#ECC488;
+    --button-a-slide: #fff;
+    --h2-slide-fs: 40px;
+    --title-fs-content: 35px;
+    --p-fs: 25px;
+    --button-slide-fs: 25px;
+}
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* FONT SITE */
+/* Font Menu */
+@font-face {
+    font-family: 'Gill Sans MT Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gill Sans MT Light'), url('Gill Sans MT Light.woff') format('woff');
+}
+/* Font Titre */
+@font-face {
+    font-family: 'Gill Sans MT Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gill Sans MT Heavy'), url('Gill Sans MT Heavy.woff') format('woff');
+}
+/* Font Texte */
+@font-face {
+    font-family: 'Gill Sans MT Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gill Sans MT Book'), url('Gill Sans MT Book.woff') format('woff');
+}
+/* @font-face {
+    font-family: 'Gill Sans MT Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gill Sans MT Bold'), url('Gill Sans MT Bold.woff') format('woff');
+} */
+
+/* GÉNÉRAL   */
+.row-limit-size{
+    max-width: 1600px;
+    width: 100%;
+}
+h1, h2, h3{
+    font-family: 'Gill Sans MT Heavy';
+    color:var(--title-color);
+}
+p, span{
+    /* font-family: 'Gill Sans MT Heavy'; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Gill Sans MT Heavy';
+}
+ul{
+    list-style-type: none;
+}
+.p-contact-header{
+    color: var(--p-contact-header);
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+/* HEADER  */
+/* Nav contact */
+.row-limit-size > .nav{
+    background-color: var(--background-nav-contact);
+}
+nav.navbar{
+    padding: 0;
+}
+.row-limit-size > .nav > li > a > img{
+    width: 50px;
+}
+
+/* Nav Menu */
+nav.navbar > .container-fluid{
+    background-color: var(--navbar-container);
+    padding: 10px;
+}
+nav.navbar > .container-fluid > a > figure > img{
+    width: 160px;
+}
+nav.navbar > .container-fluid > #navbarNav > ul > li > a {
+    color: var(--link-menu);
+    padding: 10px;
+    font-size: var(--link-menu-font);
+}
+
+/* Slide */
+.content-slide, .presta-categorie, .contact-txt{
+    -webkit-box-shadow: 0px 4px 22px 0px rgba(0,0,0,0.25); 
+    box-shadow: 0px 4px 22px 0px rgba(0,0,0,0.25);
+}
+.content-slide{
+    width: 45%;
+    height: 505px;
+}
+.slide > #carouselExampleIndicators > .carousel-inner > .carousel-item > .content-slide > .txt-slide > h2{
+    font-size: var(--h2-slide-fs);
+    padding: 20px;
+   
+}
+.h2-presta{
+    font-size: var(--h2-slide-fs);
+    padding: 50px 0;
+}
+.slide > #carouselExampleIndicators > .carousel-inner > .carousel-item{
+    position: relative;
+}
+.slide > #carouselExampleIndicators > .carousel-inner > .carousel-item > .content-slide > .txt-slide{
+    position: relative;
+    top: 30%;
+}
+.slide > #carouselExampleIndicators > .carousel-inner > .carousel-item > .content-slide > .txt-slide > p{
+    font-size: var(--p-fs);
+    padding: 20px 0 40px 0;
+}
+.slide > #carouselExampleIndicators > .carousel-inner > .carousel-item > .content-slide > .txt-slide > button{
+    background-color: var(--button-slide);
+    width: 300px;
+    height: 65px;
+    border: none;
+    
+}
+.slide > #carouselExampleIndicators > .carousel-inner > .carousel-item > .content-slide > .txt-slide > button > a{
+    color: var(--button-a-slide);
+    font-size: var(--button-slide-fs);
+}
+
+/* Prestations  */
+.presta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-count: 3;
+    column-gap: 100px;
+    align-items: center;
+}
+.presta > .presta-categorie{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.presta > .presta-categorie > figure > img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    position: absolute;
+    top: 0%;
+    left: 0;
+}
+.presta > .presta-categorie>.txt-presta{
+    position: absolute;
+    top: 45%;
+}
+
+
+.presta > .presta-categorie>.txt-presta>p {
+    font-size: var(--p-fs);
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+
+}
+.presta > .presta-categorie>.txt-presta>h3{
+    font-size: var(--title-fs-content);
+    text-align: center;
+    padding-top: 20px;
+
+
+}
+.presta > .presta-categorie> .price-presta{
+width: 100%;
+height: 70px;
+background-color: #ECC488;
+position: absolute;
+bottom: 0;
+font-size: var(--p-fs);
+font-weight: 700;
+color: #fff;
+justify-content: center;
+}
+
+/* Div Contact */
+.contact-txt{
+    height: 500px;
+    width: 40%;
+}
+.contact > .contact-txt > .horaire{
+    padding: 20px 0;
+}
+.contact > .contact-txt > .horaire > p{
+    font-size: var(--p-fs);
+}
+.contact > .contact-txt > .horaire > p > span.jours{
+    font-weight: 700;
+    padding-right: 10px;
+}
+.contact > .contact-txt > .adresse > .txt-adresse{
+    padding: 20px 0;
+}
+.contact > .contact-txt > .adresse > .txt-adresse > a{
+    color: #000;
+    font-size: var(--p-fs);
+}
+.contact > .contact-txt > .adresse > .txt-adresse > a > img{
+    width: 70px;
+    padding: 0 20px 0 10px;
+}
