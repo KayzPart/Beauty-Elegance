@@ -11,6 +11,8 @@ if(isset($_POST['submit'])){
     $firstname = $_POST['firstname'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
+
+    echo "Bonjour " .$firsname. "nous vous remercions pour votre inscription à notre newsletter, et vous confirmons sa prise en compte !";
  
     try{
         $db = new PDO('mysql:host=localhost;dbname=beautyelegance;charset=UTF8','root');
