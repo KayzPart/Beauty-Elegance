@@ -4,23 +4,24 @@
 <!-- je creer un envoi de formulaire à la base de données  -->
 <?php
 
-require_once './connect.php';
+
 
 
 if(isset($_POST['submit'])){
-    $name = $_POST['Nom'];
-    $email = $_POST['Adresse email'];
-    $phone = $_POST['Telephone'];
+    $firstname = $_POST['firstname'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
  
-}
-    $req=$db->prepare("INSERT INTO `newsletter` (`Name`, `Adresse_email`, `Telephone`) VALUES(:Nom, :Prenom, : Adresse email, NOW())");
+    require_once './connect.php';
 
-    $req->bindParam('Nom',$name, PDO::PARAM_STR);
-    $req->bindParam('Adresse_email',$email, PDO::PARAM_STR);
-    $req->bindParam('Telephone',$phone, PDO::PARAM_STR);
+    $req=$db->prepare("INSERT INTO `newsletter` (`nom`, `email`, `telephone`) VALUES(:firstname, :email, :telephone NOW())");
+
+    $req->bindParam('firstname',$firstname, PDO::PARAM_STR);
+    $req->bindParam('email',$email, PDO::PARAM_STR);
+    $req->bindParam('phone',$phone, PDO::PARAM_STR);
     
     $req->execute();
-    var_dump($req);
+    // var_dump($req);
 
 }
 ?>
